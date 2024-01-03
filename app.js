@@ -68,3 +68,5 @@ function wechatSend(type, msg) {
     }
   })
 }
+
+
