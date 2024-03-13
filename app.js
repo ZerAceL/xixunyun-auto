@@ -7,15 +7,12 @@ const axios = require('axios')
     const loginApi = qs.loginApi
 
     // 签到并提交每日体温报告 
-    // login().then((token) => {
-    //   sign(token)
-    //   studentReportInfo(token)
-    // })
-setTimeout(() => {
+login().then((token) => {
+    setTimeout(() => {
         sign(token);
         studentReportInfo(token);
-    );
-}, 5000);
+    }, 5000);
+});
 
 
     //登录
